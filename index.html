@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  
+  <title>Moisés Flores Ventura</title>
+</head>
+<body>
+  <!-- Fondo del cielo -->
+  <div class="sky">
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+  </div>
+
+  <!-- Contenedor principal -->
+  <div class="card">
+    <!-- Contenido de la tarjeta -->
+    <div class="left-content">
+      <h3>Moisés Flores Ventura</h3>
+      <p>Technical Support And FullStack Developer.</p>
+      <div class="social-links ">
+        <a href="#" style="color: #25D366;" id="whatsappLink"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/moises-flores-ventura-7ab12a194/" style="color: #0A66C2;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/MOISES85-sys?tab=projects" style="color: #ffffff;"><i class="fab fa-github"></i></a>
+        <a href="#" style="color: #ff1e00;" id="emailLink"><i class="far fa-envelope"></i></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a onclick="openModal('proyectos')">Proyectos</a></li>
+          <li><a onclick="openModal('cv')">Descargar CV</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Imagen de perfil -->
+    <div class="profile-img">
+      <img class="profile-img" src="IMAGENES/FotoPerfil.png" alt="Perfil de Moisés Flores Ventura">
+    </div>
+  </div>
+  
+  <!-- Modales -->
+  <!-- Modal de Proyectos -->
+  <div id="modal-proyectos" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-proyectos')">&times;</span>
+      <h2>Proyectos</h2>
+      <p>Presiona sobre las imagenes para ir al sitios.</p>
+      <div class="modal-body">
+        <div class="project-container">
+          <div class="project-card">
+            <img src="IMAGENES/Gilbert.jpeg" alt="Proyecto 1" style="width: 100%; height: auto;" onclick="GGilbertObras()">
+            <h3>Grupo Gilbert (C. Obras)</h3>
+            <p>Página Web para llevar el control de obras, inventario y seguimento en general de todas las áreas.</p>
+          </div>
+          <div class="project-card">
+            <img src="IMAGENES/Gilbert.jpeg" alt="Proyecto 2"  style="width: 100%; height: auto;" onclick="GGilbertPWeb()">
+            <h3>Grupo Gilbert </h3>
+            <p>Sitio Web de la empresa.</p>
+          </div>
+          <div class="project-card" onclick="KIFTienda()">
+            <img src="IMAGENES/KIF.jpg" alt="Proyecto 3"  style="width: 100%; height: auto;">
+            <h3>KIF</h3>
+            <p>Tienda Oficial y manejo de redes sociales</p>
+          </div>
+          <div class="project-card">
+            <img src="IMAGENES/APPrendiendo.png" alt="Proyecto 4"  style="width: 100%; height: auto;">
+            <h3>Apprendiendo Español</h3>
+            <p>Aplicación interactiva con enfoque a niños menores para aprender español de una manera fácil.</p>
+          </div>
+          <div class="project-card">
+            <img src="IMAGENES/emvy.png" alt="Proyecto 5"  style="width: 100%; height: auto;">
+            <h3>EMVY ARQUITECTOS</h3>
+            <p>Descripción del proyecto 5...</p>
+          </div>
+          <div class="project-card">
+            <img src="IMAGENES/KinderKarl.jpeg" alt="Proyecto 6"  style="width: 100%; height: auto;">
+            <h3>KINDER KARL ROGERS</h3>
+            <p>Software Control de Asistencias</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Modal Descargar CV -->
+  <div id="modal-cv" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('cv')">&times;</span>
+      <h2>CV</h2>
+      <p>¡Contáctame!</p>
+      <iframe src="CV.pdf" width="100%" height="500px">
+        <p>Your browser does not support PDFs. Please download the PDF to view it:</p>
+        <a href="CV.pdf">Download PDF</a>
+      </iframe>
+    </div>
+  </div>
+  <div id="raton" style="position: fixed; bottom: 20px; right: 20px;"> <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster"> <div class="wheel"></div> <div class="hamster"> <div class="hamster__body"> <div class="hamster__head"> <div class="hamster__ear"></div> <div class="hamster__eye"></div> <div class="hamster__nose"></div> </div> <div class="hamster__limb hamster__limb--fr"></div> <div class="hamster__limb hamster__limb--fl"></div> <div class="hamster__limb hamster__limb--br"></div> <div class="hamster__limb hamster__limb--bl"></div> <div class="hamster__tail"></div> </div> </div> <div class="spoke"></div> </div> </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
+
